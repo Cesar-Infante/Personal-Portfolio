@@ -4,6 +4,10 @@
     --text-color: #33272a;
 }
 
+* {
+    color: var(--text-color);
+}
+
 body {
     background-color: var(--background-color);
     border: 6px solid;
@@ -13,10 +17,18 @@ body {
     scroll-behavior: smooth;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
 header {
     margin: 0;
     padding: 20px;
-    display:inline-flex;
+    display: flex;
     justify-content: space-between;
     /* align-items: center; */
     background-color: var(--border-color);
@@ -68,10 +80,55 @@ nav li:hover {
     top: 10px;
 }
 
-section {
+h2 {
+    font-size: 35px;
+    text-align: center;
+    padding: 12px;
+}
+
+.about-me {
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 50px 602px;
+    position: relative;
+    right: 250px;
+}
+
+
+#pic {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 289px;
+    position: absolute;
+    left: 715px;
+    top: -45px;
+    border: 2px solid var(--border-color);
+    border-radius: 65px;
+}
+
+#bio {
+    padding: 5px;
+    margin: 10px;
+}
+
+#activities {
     border: 2px solid var(--border-color);
     border-radius: 10px;
     padding: 1rem;
+    margin: 20px;
+}
+
+#current {
+text-align: center;
+font-size: 35px;
+}
+
+article {
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
     margin: 20px;
 }
 
