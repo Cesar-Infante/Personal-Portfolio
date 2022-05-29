@@ -16,6 +16,7 @@ body {
     border-image-slice: 2;
     width: 100%;
     scroll-behavior: smooth;
+    /* max-width: 1140px; */
 }
 
 header {
@@ -39,7 +40,7 @@ header h1 {
 
 nav {
     display: flex;
-    align-items:center;
+    align-items: center;
     text-align: center;
 }
 
@@ -76,16 +77,18 @@ h2 {
 .about-me {
     border: 2px solid var(--border-color);
     border-radius: 10px;
+    box-shadow: -5px 6px 9px rgba(0, 0, 0, 0.3);
 }
 
 
 #pic {
-    height: auto;
-    width: auto;
-    max-width: 250px;
-    max-height: 289px;
-    border: 2px solid var(--border-color);
-    border-radius: 65px;
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px dotted var(--border-color);
+    border-radius: 50%;
 }
 
 #bio {
@@ -110,6 +113,7 @@ article {
     border-radius: 10px;
     padding: 2rem;
     margin: 20px;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 768px) {
