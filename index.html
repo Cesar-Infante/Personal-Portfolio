@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head for metedata -->
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +11,30 @@
     <title>Portfolio Page</title>
 </head>
 
+<!-- Containing all the contents -->
+
 <body>
+
+    <!-- Top header with h1, nav, a href, button  -->
     <header>
         <h1>Cesar Infante</h1>
         <nav>
             <a href="https://github.com/Cesar-Infante" target="_blank" Github>Github</a>
             <a href="https://www.linkedin.com/in/cesar-infante-a56557222/" target="_blank" linkedin>Linkedin</a>
-            <a href="#"> Contact Me</a>
-            <a href="#myProjects"> Projects</a>
+            <a href="#contact" Contact Me>Contact Me</a>
+            <a href="#myProjects" Projects>Projects</a>
         </nav>
+
+        <!-- Toggle background and indicator button  -->
+        <!-- <div id="toggle">
+            <i class="indicator"></i>
+        </div> -->
     </header>
 
+    <!-- Main Content  -->
     <main>
+
+        <!-- Section with h2, img, p -->
         <section class="about-me">
             <h2>Get to know a little about me</h2>
             <img id="pic" src="Assets/images/IMG_1030_Original (2).jpg" alt="Image of me out for some lunch">
@@ -33,9 +46,9 @@
             </p>
         </section>
 
+        <!-- Section with h3, 3 articles containing h3, p  -->
         <section id="activities">
             <h3 id="current">Current Bootcamp activities</h3>
-            <a href all articles></a>
             <article>
                 <h3>Week 3 UCR Bootcamp</h3>
                 <p>For This current week we will be learning Javascript! our introduction into
@@ -57,34 +70,50 @@
             </article>
         </section>
 
+        <!-- Section with h4, article containing a href, img, figcaption  -->
         <section id="projects">
-            <h4 id="myProjects">Projects<h4>
-                    <article id="work">
-                        <a href="https://cesar-infante.github.io/Horiseon-Optimization-UCR/" target="_blank">
-                            <img class="imglinks" src="Assets/images/Horiseon-Opt.png" alt="link to project">
-                        </a>
-                        <a href="https://cesar-infante.github.io/Mini-Project-CSS/" target="_blank">
-                            <img class="imglinks"  src="Assets/images/CSS-Snippets.png" alt="link to project">
-                        </a>
-                    </article>
-
-                    <!-- <article>
-                <h4></h4>
-                <p> <a href="###">
-                        <img src="Assets/images/" alt="link to project">
-                </p>
-            </article> -->
+            <h4 id="myProjects">Projects</h4>
+            <article id="work">
+                <a href="https://cesar-infante.github.io/Horiseon-Optimization-UCR/" target="_blank">
+                    <img class="imglinks" src="Assets/images/Horiseon-Opt.png" alt="link to project">
+                    <figcaption>Horiseon Optimization</figcaption>
+                </a>
+                <a href="https://cesar-infante.github.io/Mini-Project-CSS/" target="_blank">
+                    <img class="imglinks" src="Assets/images/CSS-Snippets.png" alt="link to project">
+                    <figcaption> CSS Code Snippets</figcaption>
+                </a>
+                <a href="https://github.com/Cesar-Infante/Personal-Portfolio" target="_blank">
+                    <img class="imglinks" src="Assets/images/Portfolio-Cover.jpg" alt="link to project">
+                    <figcaption> Personal Portfolio</figcaption>
+                </a>
+            </article>
         </section>
-
-        <footer>
-            <h5>Contact me</h5>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </footer>
     </main>
+
+    <!-- Footer containing h5, unordered list, img  -->
+    <footer>
+        <h5 id="contact">Contact Me</h5>
+        <ul>
+            <li>
+                <a href="mailto: cesar261110@gmail.com" target="_blank">
+                    <img class="icons" src="Assets/images/gmail.png" alt="gmail logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Cesar-Infante" target="_blank">
+                    <img class="icons" src="Assets/images/GitHub-Mark-32px.png" alt="Github logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/cesar-infante-a56557222/" target="_blank">
+                    <img class="icons" src="Assets/images/LI-In-Bug.png" alt="linkedin Logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- linking to script.js -->
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
