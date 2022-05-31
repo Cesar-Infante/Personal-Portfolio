@@ -243,7 +243,7 @@ article {
     opacity: .90;
 }
 
-/* limglinks styling when govering over */
+/* limglinks styling when hovering over */
 .imglinks:hover {
     box-shadow: inset 0px 0px 8px
     rgb(6, 7, 6),
@@ -306,3 +306,4 @@ nav {
         flex-direction: column;
     }
 }
+
