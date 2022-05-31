@@ -8,7 +8,7 @@ Deployed URL: [Portfolio]
 GitHub Repo URL: [Portfolio-GitHub]
 
 
-<img src="assets/images/Portfolio-Profile.png" width="413px" height="736px"/>
+<img src="Assets/images/Portfolio-Profile.png" width="413px" height="736px"/>
 
 
 [Portfolio]: https://cesar-infante.github.io/Personal-Portfolio/
