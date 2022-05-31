@@ -1,2 +1,3 @@
 # Personal-Portfolio
-Portfolio holding a little info about me along with with my current project work. 
+
+Building a portfolio is a necesity for when showcasing completed projects/work 
