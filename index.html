@@ -18,16 +18,16 @@
     <header>
         <h1>Cesar Infante</h1>
         <nav>
-            <a href="https://github.com/Cesar-Infante" target="_blank" Github>Github</a>
-            <a href="https://www.linkedin.com/in/cesar-infante-a56557222/" target="_blank" linkedin>Linkedin</a>
-            <a href="#contact" Contact Me>Contact Me</a>
-            <a href="#myProjects" Projects>Projects</a>
+            <a id="Link1" href="https://github.com/Cesar-Infante" target="_blank" Github>Github</a>
+            <a id="Link2" href="https://www.linkedin.com/in/cesar-infante-a56557222/" target="_blank" linkedin>Linkedin</a>
+            <a id="Link3" href="#contact" Contact Me>Contact Me</a>
+            <a id="Link4" href="#myProjects" Projects>Projects</a>
         </nav>
 
         <!-- Toggle background and indicator button  -->
-        <!-- <div id="toggle">
+        <div id="toggle">
             <i class="indicator"></i>
-        </div> -->
+        </div>
     </header>
 
     <!-- Main Content  -->
@@ -49,21 +49,40 @@
         <section id="activities">
             <h3 id="current">Current Bootcamp Activities</h3>
             <article>
+                <h3>Week 6 UCR Bootcamp</h3>
+                <p> Module 6 we learned about how to request data from a server! Implement and explain the differences between making
+                    HTTP GET requests using XMLHttpRequest, jQuery AJAX, and the Fetch API. 
+                </p>
+            </article>
+            <article>
+                <h3>Week 5 UCR Bootcamp</h3>
+                <p>  Module 5 on third party API's was definetly a handful! From learning JQuery to using bootstrap and implementing it! 
+                    One of the coolest features I did like was using moment.js to format dates and calculate time differences.
+                </p>
+            </article>
+            <article>
+                <h3>Week 4 UCR Bootcamp</h3>
+                <p>  Module 4 consisted of Web API's! One of the biggest things I learned from here is DOM manipulation
+                    and its relationship with HTML! Along with adding event listeners like on keypresses and mouse clicks,
+                    and the biggest feature localStorage!
+                </p>
+            </article>
+            <article>
                 <h3>Week 3 UCR Bootcamp</h3>
-                <p>  For This current week we will be learning Javascript! our introduction into
+                <p>  Module 3 We will be learning Javascript! our introduction into
                     Javascript will definetly bring an extra element into our code and knowledge.
 
                 </p>
             </article>
             <article>
                 <h3>Week 2 UCR Bootcamp</h3>
-                <p>  This past week we jumped into advanced CSS learning responsive design
+                <p>  Module 2 This past week we jumped into advanced CSS learning responsive design
                     along with Pseudo-Class, Pseudo-Elements, CSS Selectors and Variables.
                 </p>
             </article>
             <article>
                 <h3>Week 1 UCR Bootcamp</h3>
-                <p>  For our first week at Bootcamp instructed by Omar Patel,
+                <p>  Module 1 For our first week at Bootcamp instructed by Omar Patel,
                     we went over HTML, CSS, and Git to get the concepts and basics.
                 </p>
             </article>
@@ -72,7 +91,21 @@
         <!-- Section with h4, article containing a href, img, figcaption  -->
         <section id="projects">
             <h4 id="myProjects">My Work</h4>
-            <article id="work">
+            <article class="mainProject">
+                <a href="https://predevz.github.io/Platello/" target="_blank">
+                    <img id="mainProjectLinks" src="Assets/images/Platello.png" alt="link to project">
+                    <figcaption id="mainProjectFig"> Platello</figcaption>
+                </a>
+                <p id="ProjectP">Platello was a group project we built out and being apart of the team <br>
+                    taught me a lot, I really enjoyed what we accomplished for project 1. <br> 
+                    My responsibility was building out the modals and storing users input <br> into localStorage
+                    and I am very proud of the outcome.</p>
+            </article>
+            <article class="work">
+                <a href="https://cesar-infante.github.io/Password-Generator-Challenge/" target="_blank">
+                    <img class="imglinks" src="Assets/images/Password-Gen.png" alt="link to project">
+                    <figcaption> Password Generator</figcaption>
+                </a>
                 <a href="https://cesar-infante.github.io/Horiseon-Optimization-UCR/" target="_blank">
                     <img id="opt" class="imglinks" src="Assets/images/Horiseon-Opt.png" alt="link to project">
                     <figcaption> Horiseon Optimization</figcaption>
@@ -113,7 +146,7 @@
     </footer>
 
     <!-- linking to script.js -->
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

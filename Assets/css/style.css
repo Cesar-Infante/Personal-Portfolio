@@ -23,10 +23,10 @@ body {
 }
 
 /* when active, body's background changes to var dark and text changes to white */
-/* body.active {
+body.active {
     background: var(--dark-mode);
     color: #e9ecef;
-} */
+}
 
 /* adjustments to header and styling */
 header {
@@ -42,6 +42,12 @@ header {
     0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
+/* When active, header's background cahnges to dark color and text changes to white */
+header.active {
+    background-color: #283618;
+    color: var(--background-color);
+}
+
 /* header h1 adjustments and styling */
 header h1 {
     color: var(--text-color);
@@ -49,11 +55,6 @@ header h1 {
     margin: .5rem;
 }
 
-/* When active, header's background cahnges to dark color and text changes to white */
-/* header.active {
-    background-color: #283618;
-    color: #e9ecef;
-} */
 
 /* navbar flex properties and alignment  */
 nav {
@@ -82,12 +83,18 @@ nav a:hover {
 }
 
 /* text not changing to white when going into dark mode */
-/* a.active {
+a.active {
     color: var(--background-color);
-} */
+}
+
+/* This is styling the navbar links when they are active. */
+nav a.hover.active {
+    border-bottom: 2px solid blue;
+    top: 10px;
+}
 
 /* toggle background positioning, styling, adjustments */
-/* #toggle {
+#toggle {
    position: relative;
    margin-left: auto;
    display: block;
@@ -100,10 +107,10 @@ nav a:hover {
    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
                inset 0 8px 60px rgba(0, 0, 0, 0.1),
                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-} */
+}
 
 /* toggle button  positioning, styling, adjustments */
-/* #toggle .indicator {
+#toggle .indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -117,12 +124,12 @@ nav a:hover {
                inset 0 8px 8px rgba(0, 0, 0, 0.1),
                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-} */
+}
 
 /* toggle indicator moves to to the right when active */
-/* #toggle.active .indicator {
+#toggle.active .indicator {
     left: 24px;
-} */
+}
 
 /* flex properties for main  */
 main {
@@ -135,6 +142,10 @@ main {
 /* removes text decoration from figcaptions */
 main a {
     text-decoration: none;
+}
+
+h1.active {
+    color: white;
 }
 
 /* h2 styling */
@@ -212,6 +223,11 @@ article {
     margin: 30px 5px 20px 5px;
 }
 
+p {
+    font-size: 18px;
+    /* font-family: Arial; */
+}
+
 /* projects outer styling and adjustments */
 #projects {
     border: 2px solid var(--border-color);
@@ -222,13 +238,14 @@ article {
 }
 
 /* work flex properties and adjustments */
-#work {
+.work {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 30px -5px 115px -5px;
     justify-content: space-evenly;
     width: 100%;
 }
+
 
 /* img flex properties and adjustments */
 .imglinks {
@@ -243,8 +260,56 @@ article {
     opacity: .90;
 }
 
+.mainProject {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#mainProjectLinks {
+    display: flex;
+    height: 220px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 21px;
+    transition: all 0.5s ease-in-out;
+    opacity: .90;
+}
+
+#mainProjectFig {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--background-color);
+    border-radius: 0 0 1rem 1rem;
+    text-decoration: none;
+    top: -36px;
+}
+
+#ProjectP {
+    text-align: center;
+    padding: 10px 30px;
+    width: 100%;
+}
+
 /* limglinks styling when hovering over */
 .imglinks:hover {
+    box-shadow: inset 0px 0px 8px
+    rgb(6, 7, 7),
+    0 0 20px
+    rgb(9, 11, 10)
+}
+
+#mainProjectLinks:hover {
     box-shadow: inset 0px 0px 8px
     rgb(6, 7, 6),
     0 0 15px
@@ -265,7 +330,7 @@ figcaption {
     color: var(--background-color);
     border-radius: 0 0 1rem 1rem;
     text-decoration: none;
-    top: -36px;
+    top: -35px;
 }
 
 /* footer styling, positioning */
@@ -288,10 +353,10 @@ footer ul {
 }
 
 /* when active, footer background color and text color change to white */
-/* footer.active {
+footer.active {
     background-color: #283618;
     color: #e9ecef;
-} */
+}
 
 /* footer image icons adjustments */
 .icons {
@@ -304,6 +369,20 @@ footer ul {
 main,
 nav {
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #mainProjectLinks {
+        display: flex;
+        height: 400px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 21px;
+        transition: all 0.5s ease-in-out;
+        opacity: .90;
     }
 }
 
