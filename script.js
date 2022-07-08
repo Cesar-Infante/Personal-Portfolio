@@ -3,11 +3,11 @@ const toggle = document.getElementById('toggle');
 var body = document.querySelector('body');
 var header = document.querySelector('header');
 var footer = document.querySelector('footer');
-var nameTitle = document.querySelector('h1')
-var navLink1 = document.querySelector('#Link1')
-var navLink2 = document.querySelector('#Link2')
-var navLink3 = document.querySelector('#Link3')
-var navLink4 = document.querySelector('#Link4')
+var nameTitle = document.querySelector('h1');
+var navLink1 = document.querySelector('#Link1');
+var navLink2 = document.querySelector('#Link2');
+var navLink3 = document.querySelector('#Link3');
+var navLink4 = document.querySelector('#Link4');
 
 toggle.addEventListener('click', function () {
     toggle.classList.toggle('active');

@@ -82,14 +82,13 @@ nav a:hover {
     top: 10px;
 }
 
-/* text not changing to white when going into dark mode */
+
 a.active {
     color: var(--background-color);
 }
 
-/* This is styling the navbar links when they are active. */
-nav a.hover.active {
-    border-bottom: 2px solid blue;
+a.active.hover {
+    border-bottom: 2px solid white;
     top: 10px;
 }
 
@@ -314,6 +313,11 @@ p {
     rgb(6, 7, 6),
     0 0 15px
     rgb(9, 11, 10)
+}
+
+.icon {
+    color: white;
+    font-size: 50px;
 }
 
 /* figcaption positioning, styling, and adjustments */
