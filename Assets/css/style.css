@@ -368,6 +368,7 @@ footer.active {
     width: 40px;
 }
 
+/* Making the elements appear on the page. */
 .reveal {
     position: relative;
     transform: translateY(150px);
@@ -375,6 +376,7 @@ footer.active {
     transition: 1s all ease;
 }
 
+/* Making the elements appear on the page. */
 .reveal.active {
     transform: translateY(0);
     opacity: 1;

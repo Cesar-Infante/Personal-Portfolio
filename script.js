@@ -1,4 +1,3 @@
-// commenting out until find solution to make links color white on dark mode.
 const toggle = document.getElementById('toggle');
 let body = document.querySelector('body');
 let header = document.querySelector('header');
@@ -9,6 +8,7 @@ let navLink2 = document.querySelector('#Link2');
 let navLink3 = document.querySelector('#Link3');
 let navLink4 = document.querySelector('#Link4');
 
+/* Toggling the class active on the elements. */
 toggle.addEventListener('click', function () {
     toggle.classList.toggle('active');
     body.classList.toggle('active');
@@ -23,6 +23,10 @@ toggle.addEventListener('click', function () {
 
 
 
+/**\
+ * If the element is within 150px of the bottom of the viewport, add the class 'active' to it,
+ * otherwise remove the class 'active' from it.
+ */
 function reveal() {
     let revealCards = document.querySelectorAll(".reveal");
   
@@ -39,6 +43,8 @@ function reveal() {
     }
   }
   
+/* Adding an event listener to the window object. The event listener is listening for the scroll event.
+When the scroll event is triggered, the reveal function is called. */
   window.addEventListener("scroll", reveal);
 
 
