@@ -55,6 +55,7 @@ window.addEventListener("scroll", reveal);
   emailjs.init("KhoGgtZIZC_WbZDOZ");
 })();
 
+const btn = document.getElementById("contactSend");
 
 /* This is grabbing the forms input fields and making sure the value are not null, if they are null they will get an error message 
 to try again. if the fields arent null, the emailjs will send the form with serviceID, templateID, and the forms content,
