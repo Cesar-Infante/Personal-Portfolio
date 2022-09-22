@@ -308,7 +308,7 @@ p {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: url(../images/svg/blurry-gradient-haikei.svg) no-repeat center center fixed;
+    background: url(/Assets/svg/blurry-gradient-haikei.svg) no-repeat center center fixed;
 }
 
 .tech-img {
