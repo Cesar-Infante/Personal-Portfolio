@@ -1,12 +1,17 @@
 const toggle = document.getElementById('toggle');
-let body = document.querySelector('body');
-let header = document.querySelector('header');
-let footer = document.querySelector('footer');
-let nameTitle = document.querySelector('h1');
-let navLink1 = document.querySelector('#Link1');
-let navLink2 = document.querySelector('#Link2');
-let navLink3 = document.querySelector('#Link3');
-let navLink4 = document.querySelector('#Link4');
+const body = document.querySelector('body');
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
+const nameTitle = document.querySelector('h1');
+const navLink1 = document.querySelector('#Link1');
+const navLink2 = document.querySelector('#Link2');
+const navLink3 = document.querySelector('#Link3');
+const navLink4 = document.querySelector('#Link4');
+const navLink5 = document.querySelector('#Link5');
+const navLink6 = document.querySelector('#Link6');
+const navLink7 = document.querySelector('#Link7');
+const navLink8 = document.querySelector('#Link8');
+
 
 /* Toggling the class active on the elements. */
 toggle.addEventListener('click', function () {
@@ -19,6 +24,10 @@ toggle.addEventListener('click', function () {
   navLink2.classList.toggle('active');
   navLink3.classList.toggle('active');
   navLink4.classList.toggle('active');
+  navLink5.classList.toggle('active');
+  navLink6.classList.toggle('active');
+  navLink7.classList.toggle('active');
+  navLink8.classList.toggle('active');
 });
 
 
