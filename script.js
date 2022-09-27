@@ -11,6 +11,7 @@ const navLink5 = document.querySelector('#Link5');
 const navLink6 = document.querySelector('#Link6');
 const navLink7 = document.querySelector('#Link7');
 const navLink8 = document.querySelector('#Link8');
+const navLink9 = document.querySelector('#Link9');
 
 
 /* Toggling the class active on the elements. */
@@ -28,6 +29,7 @@ toggle.addEventListener('click', function () {
   navLink6.classList.toggle('active');
   navLink7.classList.toggle('active');
   navLink8.classList.toggle('active');
+  navLink9.classList.toggle('active');
 });
 
 
